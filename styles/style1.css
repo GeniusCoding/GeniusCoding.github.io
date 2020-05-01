@@ -1,17 +1,34 @@
+:root {
+    --logo-green: #10d15a;
+    --logo-gray: #676767;
+    --logo-yellow: #ffff64;
+    --logo-blue: #2b22e3;
+    --accent1-color: #1a1a1a;
+}
 header {
     position: relative;
     top: 0; left: 0;
     width: 100%;
     height: 50px;
-    background-color: #10D15A;
-    box-shadow: 0 0 10px gray;
+    background-color: var(--logo-green);
+    box-shadow: 0 0 10px var(--logo-gray);
 }
-header.left {
-    position: relative;
+header img {
+    max-height: 50px;
+}
+header h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    position: absolute;
     top: 0; left: 0;
-    width: 30%;
+    margin: 0;
+    color: var(--accent1-color);
+    padding: 7px;
+    opacity: 0;
 }
-header.left.name {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+footer {
+    position: absolute;
+    width: calc(100% - 1em);
+    bottom: 0; left: 0;
+    padding: 0.5em;
+    background: var(--logo-gray);
 }
