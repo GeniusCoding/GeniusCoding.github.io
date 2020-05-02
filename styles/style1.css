@@ -5,6 +5,9 @@
     --logo-blue: #2b22e3;
     --accent1-color: #1a1a1a;
 }
+body {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
 header {
     position: relative;
     top: 0; left: 0;
