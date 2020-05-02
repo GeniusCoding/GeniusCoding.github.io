@@ -14,7 +14,10 @@ header {
     box-shadow: 0 0 10px var(--logo-gray);
 }
 header img {
+    position: relative;
     max-height: 50px;
+    transition: all 0.5s;
+    z-index: 11;
 }
 header h1 {
     font-family: 'Trebuchet MS', sans-serif;
@@ -22,8 +25,21 @@ header h1 {
     top: 0; left: 0;
     margin: 0;
     color: var(--accent1-color);
-    padding: 7px;
+    letter-spacing: -15px;
+    padding: 6.5px;
+    padding-right: 15px;
     opacity: 0;
+    transition: all 0.5s;
+    z-index: 10;
+}
+header img:hover + h1, header h1:hover {
+    letter-spacing: -1px;
+    padding-left: 50px;
+    background: rgba(255,255,255,0.5);
+    opacity: 1;
+}
+header h1:hover, header img:hover {
+    cursor: pointer;
 }
 footer {
     position: absolute;
