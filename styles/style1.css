@@ -51,3 +51,64 @@ footer {
     padding: 0.5em;
     background: var(--logo-gray);
 }
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+#start {
+    position: absolute;
+    top: 0; left: 0;
+    margin: 0;
+    padding: 0;
+    width: calc(100%);
+    height: calc(100%);
+    background-image: url("/images/home-cover-background.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#start > .clear-cover {
+    position: absolute;
+    display: table;
+    top: 0; left: 0;
+    width: calc(100%);
+    height: calc(100%);
+    background-image: linear-gradient(to bottom, rgba(50,50,50,0.4), rgba(0,0,0,0.4));
+}
+#start > .clear-cover > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+#start > .clear-cover > div > .first-box > div {
+    display: flex;
+    width: 330px;
+}
+#start > .clear-cover > div > .first-box > div > h1 {
+    color: white;
+    padding-bottom: 15px;
+}
+#start > .clear-cover > div > .first-box > div > img {
+    padding-top: 10px;
+    width: 60px;
+    height: 60px;
+}
+.first-box {
+    position: relative;
+}
+.second-box {
+    padding-top: 20px;
+}
+a.button {
+    padding: 1em;
+    color: black;
+    background: #F5F5F5;
+    border: solid 1px gray;
+    border-radius: 5px;
+    text-decoration: none;
+}
+a.button:hover {
+    background: #e6e6e6;
+}
